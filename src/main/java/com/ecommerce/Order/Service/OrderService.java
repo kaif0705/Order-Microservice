@@ -26,7 +26,7 @@ public class OrderService {
         if (cartItems.isEmpty()) {
             return Optional.empty();
         }
-
+        
         //Calculate the total amount of cart
         BigDecimal totalPrice = cartItems.stream()
                 .map(CartItem::getPrice)
